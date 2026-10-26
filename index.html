@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Gladys Work">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0f172a">
+<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20180%20180%22%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20rx%3D%2238%22%20fill%3D%22%231e3a8a%22/%3E%3Crect%20x%3D%2222%22%20y%3D%2234%22%20width%3D%22136%22%20height%3D%22124%22%20rx%3D%2216%22%20fill%3D%22%23ffffff%22/%3E%3Crect%20x%3D%2222%22%20y%3D%2234%22%20width%3D%22136%22%20height%3D%2238%22%20rx%3D%2216%22%20fill%3D%22%23dc2626%22/%3E%3Ctext%20x%3D%2290%22%20y%3D%2260%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3ENOV%202026%3C/text%3E%3Ctext%20x%3D%2290%22%20y%3D%22115%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2234%22%20font-weight%3D%22bold%22%20fill%3D%22%230f172a%22%20text-anchor%3D%22middle%22%3EGLADYS%3C/text%3E%3Ctext%20x%3D%2290%22%20y%3D%22144%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%20font-weight%3D%22bold%22%20fill%3D%22%231d4ed8%22%20text-anchor%3D%22middle%22%3E72%20VISITS%20%C2%B7%20GPS%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20180%20180%22%3E%3Crect%20width%3D%22180%22%20height%3D%22180%22%20rx%3D%2238%22%20fill%3D%22%231e3a8a%22/%3E%3Crect%20x%3D%2222%22%20y%3D%2234%22%20width%3D%22136%22%20height%3D%22124%22%20rx%3D%2216%22%20fill%3D%22%23ffffff%22/%3E%3Crect%20x%3D%2222%22%20y%3D%2234%22%20width%3D%22136%22%20height%3D%2238%22%20rx%3D%2216%22%20fill%3D%22%23dc2626%22/%3E%3Ctext%20x%3D%2290%22%20y%3D%2260%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3ENOV%202026%3C/text%3E%3Ctext%20x%3D%2290%22%20y%3D%22115%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2234%22%20font-weight%3D%22bold%22%20fill%3D%22%230f172a%22%20text-anchor%3D%22middle%22%3EGLADYS%3C/text%3E%3Ctext%20x%3D%2290%22%20y%3D%22144%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2218%22%20font-weight%3D%22bold%22%20fill%3D%22%231d4ed8%22%20text-anchor%3D%22middle%22%3E72%20VISITS%20%C2%B7%20GPS%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="data:application/manifest+json;utf8,%7B%22name%22%3A%20%22Gladys%20Work%20Calendar%20%5Cu2014%20Nov%202026%22%2C%20%22short_name%22%3A%20%22Gladys%20Work%22%2C%20%22start_url%22%3A%20%22.%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22background_color%22%3A%20%22%230f172a%22%2C%20%22theme_color%22%3A%20%22%231e3a8a%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22data%3Aimage/svg%2Bxml%3Butf8%2C%253Csvg%2520xmlns%253D%2522http%253A//www.w3.org/2000/svg%2522%2520viewBox%253D%25220%25200%2520180%2520180%2522%253E%253Crect%2520width%253D%2522180%2522%2520height%253D%2522180%2522%2520rx%253D%252238%2522%2520fill%253D%2522%25231e3a8a%2522/%253E%253Crect%2520x%253D%252222%2522%2520y%253D%252234%2522%2520width%253D%2522136%2522%2520height%253D%2522124%2522%2520rx%253D%252216%2522%2520fill%253D%2522%2523ffffff%2522/%253E%253Crect%2520x%253D%252222%2522%2520y%253D%252234%2522%2520width%253D%2522136%2522%2520height%253D%252238%2522%2520rx%253D%252216%2522%2520fill%253D%2522%2523dc2626%2522/%253E%253Ctext%2520x%253D%252290%2522%2520y%253D%252260%2522%2520font-family%253D%2522Arial%252Csans-serif%2522%2520font-size%253D%252222%2522%2520font-weight%253D%2522bold%2522%2520fill%253D%2522%2523ffffff%2522%2520text-anchor%253D%2522middle%2522%253ENOV%25202026%253C/text%253E%253Ctext%2520x%253D%252290%2522%2520y%253D%2522115%2522%2520font-family%253D%2522Arial%252Csans-serif%2522%2520font-size%253D%252234%2522%2520font-weight%253D%2522bold%2522%2520fill%253D%2522%25230f172a%2522%2520text-anchor%253D%2522middle%2522%253EGLADYS%253C/text%253E%253Ctext%2520x%253D%252290%2522%2520y%253D%2522144%2522%2520font-family%253D%2522Arial%252Csans-serif%2522%2520font-size%253D%252218%2522%2520font-weight%253D%2522bold%2522%2520fill%253D%2522%25231d4ed8%2522%2520text-anchor%253D%2522middle%2522%253E72%2520VISITS%2520%25C2%25B7%2520GPS%253C/text%253E%253C/svg%253E%22%2C%20%22sizes%22%3A%20%22180x180%22%2C%20%22type%22%3A%20%22image/svg%2Bxml%22%7D%5D%7D">
+<title>Gladys Work Calendar — November 2026 (Monthly + Weekly Breakdown)</title>
+<style>
+  @page {
+    size: letter landscape;
+    margin: 0.20in 0.24in;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #0f172a;
+    background: #f8fafc;
+    padding: 14px;
+  }
+  .no-print-bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #0f172a;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(15,23,42,0.22);
+  }
+  .nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+  .nav-btn {
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #475569;
+    padding: 6px 11px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 12.5px;
+    text-decoration: none;
+  }
+  .nav-btn:hover, .nav-btn.active {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #3b82f6;
+  }
+  .print-btn {
+    background: #16a34a;
+    color: #fff;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .shortcut-banner {
+    display: none;
+    background: #eff6ff;
+    border: 2px solid #3b82f6;
+    color: #1e3a8a;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-size: 13.5px;
+    line-height: 1.45;
+  }
+  .print-page {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  .week-page {
+    page-break-before: always;
+    break-before: page;
+  }
+  .page-hdr {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #0f172a;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+  }
+  .page-hdr h1 {
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    color: #0f172a;
+  }
+  .sub-hdr {
+    font-size: 11.5px;
+    color: #475569;
+    margin-top: 2px;
+  }
+  .page-badge {
+    background: #e2e8f0;
+    color: #1e293b;
+    font-weight: 700;
+    font-size: 11.5px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .month-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  .month-table th {
+    background: #1e293b;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid #334155;
+  }
+  .m-cell {
+    border: 1px solid #cbd5e1;
+    vertical-align: top;
+    height: 96px;
+    padding: 3px 4px;
+    background: #ffffff;
+  }
+  .m-cell.empty-day {
+    background: #f8fafc;
+  }
+  .m-cell.pad-cell {
+    background: #f1f5f9;
+  }
+  .m-day-hdr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+  .m-day-num {
+    font-weight: 800;
+    font-size: 12.5px;
+    color: #0f172a;
+  }
+  .day-route-btn {
+    font-size: 9px;
+    text-decoration: none;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  .m-item {
+    font-size: 9.5px;
+    line-height: 1.2;
+    padding: 1.5px 3.5px;
+    margin-bottom: 1.5px;
+    background: #f8fafc;
+    border-radius: 2px;
+  }
+  .m-item a {
+    color: #0f172a;
+    text-decoration: none;
+  }
+  .m-item a:hover {
+    text-decoration: underline;
+  }
+  .holiday-tag {
+    font-size: 9.5px;
+    font-weight: 700;
+    color: #b45309;
+    background: #fef3c7;
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin-top: 2px;
+  }
+  .day-card {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .day-card-hdr {
+    background: #f1f5f9;
+    padding: 4px 10px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #0f172a;
+    border-bottom: 1px solid #cbd5e1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .full-day-route {
+    font-size: 11px;
+    background: #1d4ed8;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .week-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .week-table th {
+    text-align: left;
+    background: #f8fafc;
+    color: #475569;
+    padding: 4px 8px;
+    border-bottom: 1px solid #cbd5e1;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  .week-table td {
+    padding: 4px 8px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .task-pill {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .nav-link {
+    display: inline-block;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 10.5px;
+  }
+  .notes-col {
+    border-left: 1px dashed #cbd5e1;
+    min-width: 160px;
+    outline: none;
+  }
+  .notes-col:empty:before {
+    content: attr(data-placeholder);
+    color: #94a3b8;
+    font-style: italic;
+    font-size: 10px;
+  }
+  tr.visit-done td {
+    background: #f0fdf4;
+  }
+  tr.visit-done td:nth-child(3) {
+    text-decoration: line-through;
+    color: #64748b !important;
+  }
+  @media (max-width: 768px) {
+    body { padding: 6px; }
+    .print-page { padding: 8px; overflow-x: auto; }
+    .month-table { min-width: 680px; }
+    .week-table { min-width: 580px; }
+  }
+  @media print {
+    body { background: #ffffff; padding: 0; margin: 0; }
+    .no-print-bar, .shortcut-banner { display: none !important; }
+    .print-page {
+      display: block !important;
+      border: none;
+      box-shadow: none;
+      margin: 0;
+      padding: 0;
+    }
+    .month-page {
+      page-break-after: always;
+      break-after: page;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .month-page .page-hdr {
+      padding-bottom: 3px;
+      margin-bottom: 4px;
+    }
+    .month-page .page-hdr h1 { font-size: 14px; }
+    .month-page .sub-hdr { font-size: 9.5px; }
+    .month-table th { padding: 2.5px 3px; font-size: 9.5px; }
+    .m-cell {
+      height: auto !important;
+      padding: 1.5px 2.5px !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .m-day-hdr { margin-bottom: 1px !important; }
+    .m-day-num { font-size: 10.5px !important; }
+    .day-route-btn { font-size: 7.5px !important; padding: 0 2px !important; }
+    .m-item {
+      font-size: 8.1px !important;
+      line-height: 1.10 !important;
+      padding: 0.8px 2.5px !important;
+      margin-bottom: 1px !important;
+    }
+    .holiday-tag { font-size: 8px !important; padding: 1px 3px !important; margin-top: 1px !important; }
+    .week-page .page-hdr { padding-bottom: 2px; margin-bottom: 3px; }
+    .week-page .page-hdr h1 { font-size: 13px; }
+    .week-page .sub-hdr { font-size: 9px; margin-top: 0; }
+    .day-card { margin-bottom: 3px !important; page-break-inside: avoid; break-inside: avoid; }
+    .day-card-hdr { padding: 1.5px 6px !important; font-size: 9.5px !important; }
+    .full-day-route { font-size: 8.5px !important; padding: 1px 5px !important; }
+    .week-table th { padding: 1.2px 4px !important; font-size: 8px !important; }
+    .week-table td { padding: 1.5px 4px !important; font-size: 8.6px !important; line-height: 1.1 !important; }
+    .task-pill { font-size: 8px !important; padding: 1px 4px !important; }
+    .nav-link { font-size: 8px !important; padding: 0.5px 4px !important; }
+    .visit-chk { width: 11px !important; height: 11px !important; }
+    .notes-col:empty:before { content: "" !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="no-print-bar">
+    <div>
+      <strong style="font-size:14.5px;">📋 Gladys Work Calendar — Nov 2026</strong>
+      <span style="font-size:12px;color:#94a3b8;margin-left:6px;">(72 Visits · Tap Any Visit for GPS Route)</span>
+    </div>
+    <div class="nav-pills">
+      <button class="nav-btn active" onclick="showSection('all', this)">All 6 Pages</button>
+      <button class="nav-btn" onclick="showSection('sec-month', this)">📅 Month Grid</button>
+      <button class="nav-btn" onclick="showSection('sec-week-1', this)">Wk 1 (1–7)</button>
+      <button class="nav-btn" onclick="showSection('sec-week-2', this)">Wk 2 (8–14)</button>
+      <button class="nav-btn" onclick="showSection('sec-week-3', this)">Wk 3 (15–21)</button>
+      <button class="nav-btn" onclick="showSection('sec-week-4', this)">Wk 4 (22–28)</button>
+      <button class="nav-btn" onclick="showSection('sec-week-5', this)">Wk 5 (29–30)</button>
+      <button class="nav-btn" style="background:#1e3a8a;border-color:#60a5fa;" onclick="toggleShortcutHelp()">📲 Phone Icon Setup</button>
+      <button class="print-btn" onclick="showAllAndPrint()">🖨️ Print All 6 Pages</button>
+    </div>
+  </div>
+
+  <div id="shortcut-help" class="shortcut-banner">
+    <strong>📲 How to Add the "Gladys Work" Shortcut Icon to Your Phone's Home Screen:</strong><br>
+    • <strong>Android (Chrome):</strong> Tap the <strong>⋮ (3 dots)</strong> in the top-right corner of Chrome &rarr; tap <strong>"Add to Home screen"</strong> (or <strong>"Install app"</strong>) &rarr; tap <strong>Add</strong>.<br>
+    • <strong>iPhone / iPad (Safari):</strong> Tap the <strong>Share button (square with arrow pointing up)</strong> at the bottom &rarr; scroll down and tap <strong>"Add to Home Screen"</strong> &rarr; tap <strong>Add</strong>.<br>
+    <em>Once added, tapping the "Gladys Work" icon on your phone opens this schedule immediately, remembers your checkmarks, and routes you to any house in 1 tap!</em>
+  </div>
+
+  <!-- PAGE 1: NOVEMBER 2026 MONTHLY CALENDAR -->
+  <section class="print-page month-page" id="sec-month">
+    <header class="page-hdr">
+      <div>
+        <h1>GLADYS WORK CALENDAR — NOVEMBER 2026 (MONTHLY OVERVIEW)</h1>
+        <p class="sub-hdr">ACTT 6 Client Appointments · 72 Total Gladys Visits Across 29 Active Clients · Click Any Client or Day Header for Turn-by-Turn GPS Navigation</p>
+      </div>
+      <div class="page-badge">Page 1 of 6</div>
+    </header>
+    <table class="month-table">
+      <thead>
+        <tr>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">1</span></div><div class="m-day-body"></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">2</span><a href="https://www.google.com/maps/dir/?api=1&destination=Tiara%20Giles&waypoints=Amanda%20Morgan|Charles%20Barker|Johnny%20Gallen&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Amanda%20Morgan%20home%20address&travelmode=driving" target="_blank"><strong>Amanda Morgan</strong>: Nursing</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Charles%20Barker%20home%20address&travelmode=driving" target="_blank"><strong>Charles Barker</strong>: Rapport</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Johnny%20Gallen%20home%20address&travelmode=driving" target="_blank"><strong>Johnny Gallen</strong>: Nursing</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Tiara%20Giles%20home%20address&travelmode=driving" target="_blank"><strong>Tiara Giles</strong>: Rapport</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">3</span><a href="https://www.google.com/maps/dir/?api=1&destination=Joylene%20Jones&waypoints=Helen%20Zehr|Cheyenne%20Bue|Lillian%20Bates&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Helen%20Zehr%20home%20address&travelmode=driving" target="_blank"><strong>Helen Zehr</strong>: Rapport</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Cheyenne%20Bue%20home%20address&travelmode=driving" target="_blank"><strong>Cheyenne Bue</strong>: Rapport</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Lillian%20Bates%20home%20address&travelmode=driving" target="_blank"><strong>Lillian Bates</strong>: Rapport</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Joylene%20Jones%20home%20address&travelmode=driving" target="_blank"><strong>Joylene Jones</strong>: Rapport</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">4</span><a href="https://www.google.com/maps/dir/?api=1&destination=Jeremy%20Mays&waypoints=Kimberly%20Barnes|Mathew%20Donegan|Todd%20Jewel&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kimberly%20Barnes%20home%20address&travelmode=driving" target="_blank"><strong>Kimberly Barnes</strong>: Nursing</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Mathew%20Donegan%20home%20address&travelmode=driving" target="_blank"><strong>Mathew Donegan</strong>: Nursing</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Todd%20Jewel%20home%20address&travelmode=driving" target="_blank"><strong>Todd Jewel</strong>: Rapport</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Jeremy%20Mays%20home%20address&travelmode=driving" target="_blank"><strong>Jeremy Mays</strong>: Rapport</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">5</span><a href="https://www.google.com/maps/dir/?api=1&destination=David%20Perdue&waypoints=Junior%20Robinson|Kellum%20Foor|Kaylynn%20Bock&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Junior%20Robinson%20home%20address&travelmode=driving" target="_blank"><strong>Junior Robinson</strong>: Nursing / Check-in</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kellum%20Foor%20home%20address&travelmode=driving" target="_blank"><strong>Kellum Foor</strong>: Nursing / Check-in</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kaylynn%20Bock%20home%20address&travelmode=driving" target="_blank"><strong>Kaylynn Bock</strong>: Nursing / Check-in</a></div><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=David%20Perdue%20home%20address&travelmode=driving" target="_blank"><strong>David Perdue</strong>: Injection</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">6</span><a href="https://www.google.com/maps/dir/?api=1&destination=Simon%20Taylor&waypoints=Ariel%20Watson|Charles%20Barker|Melinda%20Haskell&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Ariel%20Watson%20home%20address&travelmode=driving" target="_blank"><strong>Ariel Watson</strong>: Med</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Charles%20Barker%20home%20address&travelmode=driving" target="_blank"><strong>Charles Barker</strong>: Diabetes</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Melinda%20Haskell%20home%20address&travelmode=driving" target="_blank"><strong>Melinda Haskell</strong>: Med Pass</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Simon%20Taylor%20home%20address&travelmode=driving" target="_blank"><strong>Simon Taylor</strong>: Nursing</a></div></div></td><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">7</span></div><div class="m-day-body"></div></td></tr>
+<tr><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">8</span></div><div class="m-day-body"></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">9</span><a href="https://www.google.com/maps/dir/?api=1&destination=Kara%20Mueller&waypoints=Simon%20Taylor|Crystal%20Kuegel|Christina%20Kent&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Simon%20Taylor%20home%20address&travelmode=driving" target="_blank"><strong>Simon Taylor</strong>: Med</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Crystal%20Kuegel%20home%20address&travelmode=driving" target="_blank"><strong>Crystal Kuegel</strong>: Nursing</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Christina%20Kent%20home%20address&travelmode=driving" target="_blank"><strong>Christina Kent</strong>: Med Pass</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kara%20Mueller%20home%20address&travelmode=driving" target="_blank"><strong>Kara Mueller</strong>: Rapport and</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">10</span><a href="https://www.google.com/maps/dir/?api=1&destination=Cheyenne%20Bue&waypoints=Melinda%20Haskell|Todd%20Jewel|Jeremy%20Mays&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Melinda%20Haskell%20home%20address&travelmode=driving" target="_blank"><strong>Melinda Haskell</strong>: Nursing</a></div><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Todd%20Jewel%20home%20address&travelmode=driving" target="_blank"><strong>Todd Jewel</strong>: Injection</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Jeremy%20Mays%20home%20address&travelmode=driving" target="_blank"><strong>Jeremy Mays</strong>: Med Pass</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Cheyenne%20Bue%20home%20address&travelmode=driving" target="_blank"><strong>Cheyenne Bue</strong>: Med Pass</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">11</span><a href="https://www.google.com/maps/dir/?api=1&destination=Dylan%20Edgell&waypoints=David%20Perdue|Phoenix%20Kamp|Amanda%20Rogers&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=David%20Perdue%20home%20address&travelmode=driving" target="_blank"><strong>David Perdue</strong>: AIMS/ Med</a></div><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Phoenix%20Kamp%20home%20address&travelmode=driving" target="_blank"><strong>Phoenix Kamp</strong>: Injection</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Amanda%20Rogers%20home%20address&travelmode=driving" target="_blank"><strong>Amanda Rogers</strong>: Nursing</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Dylan%20Edgell%20home%20address&travelmode=driving" target="_blank"><strong>Dylan Edgell</strong>: Nursing</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">12</span><a href="https://www.google.com/maps/dir/?api=1&destination=Joylene%20Jones&waypoints=Charles%20Barker|Melinda%20Haskell|Kaylynn%20Bock&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Charles%20Barker%20home%20address&travelmode=driving" target="_blank"><strong>Charles Barker</strong>: Injection</a></div><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Melinda%20Haskell%20home%20address&travelmode=driving" target="_blank"><strong>Melinda Haskell</strong>: Injection</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kaylynn%20Bock%20home%20address&travelmode=driving" target="_blank"><strong>Kaylynn Bock</strong>: Med pass</a></div><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Joylene%20Jones%20home%20address&travelmode=driving" target="_blank"><strong>Joylene Jones</strong>: Injection</a></div></div></td><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">13</span></div><div class="m-day-body"></div></td><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">14</span></div><div class="m-day-body"></div></td></tr>
+<tr><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">15</span></div><div class="m-day-body"></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">16</span><a href="https://www.google.com/maps/dir/?api=1&destination=Christina%20Kent&waypoints=Kimberly%20Barnes|Michael%20Jones|Tiara%20Giles&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kimberly%20Barnes%20home%20address&travelmode=driving" target="_blank"><strong>Kimberly Barnes</strong>: AIMS/follow up</a></div><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Michael%20Jones%20home%20address&travelmode=driving" target="_blank"><strong>Michael Jones</strong>: AIMS/follow up</a></div><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Tiara%20Giles%20home%20address&travelmode=driving" target="_blank"><strong>Tiara Giles</strong>: AIMS/follow up</a></div><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Christina%20Kent%20home%20address&travelmode=driving" target="_blank"><strong>Christina Kent</strong>: AIMS/follow up</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">17</span><a href="https://www.google.com/maps/dir/?api=1&destination=Kimberly%20Heath&waypoints=Ariel%20Watson|Jamel%20Brown|Johnny%20Gallen&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Ariel%20Watson%20home%20address&travelmode=driving" target="_blank"><strong>Ariel Watson</strong>: Rapport</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Jamel%20Brown%20home%20address&travelmode=driving" target="_blank"><strong>Jamel Brown</strong>: Rapport</a></div><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Johnny%20Gallen%20home%20address&travelmode=driving" target="_blank"><strong>Johnny Gallen</strong>: AIMS/follow</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kimberly%20Heath%20home%20address&travelmode=driving" target="_blank"><strong>Kimberly Heath</strong>: Rapport</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">18</span><a href="https://www.google.com/maps/dir/?api=1&destination=Terry%20Rogers&waypoints=Kellum%20Foor|Kaylynn%20Bock|Madison%20Jones&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kellum%20Foor%20home%20address&travelmode=driving" target="_blank"><strong>Kellum Foor</strong>: AIMS/follow</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kaylynn%20Bock%20home%20address&travelmode=driving" target="_blank"><strong>Kaylynn Bock</strong>: Med pass</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Madison%20Jones%20home%20address&travelmode=driving" target="_blank"><strong>Madison Jones</strong>: Rapport</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Terry%20Rogers%20home%20address&travelmode=driving" target="_blank"><strong>Terry Rogers</strong>: Nursing</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">19</span><a href="https://www.google.com/maps/dir/?api=1&destination=Lillian%20Bates&waypoints=Amanda%20Morgan|Johnny%20Gallen|Simon%20Taylor&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Amanda%20Morgan%20home%20address&travelmode=driving" target="_blank"><strong>Amanda Morgan</strong>: Injection</a></div><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Johnny%20Gallen%20home%20address&travelmode=driving" target="_blank"><strong>Johnny Gallen</strong>: Injection</a></div><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Simon%20Taylor%20home%20address&travelmode=driving" target="_blank"><strong>Simon Taylor</strong>: Injection</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Lillian%20Bates%20home%20address&travelmode=driving" target="_blank"><strong>Lillian Bates</strong>: Med pass</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">20</span><a href="https://www.google.com/maps/dir/?api=1&destination=Caitlin%20Claus&waypoints=Kyra%20Caputo|Mathew%20Donegan|Melinda%20Haskell&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kyra%20Caputo%20home%20address&travelmode=driving" target="_blank"><strong>Kyra Caputo</strong>: Med pass</a></div><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Mathew%20Donegan%20home%20address&travelmode=driving" target="_blank"><strong>Mathew Donegan</strong>: AIMS/Follow</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Melinda%20Haskell%20home%20address&travelmode=driving" target="_blank"><strong>Melinda Haskell</strong>: Med Pass</a></div><div class="m-item" style="border-left:3px solid #047857;"><a href="https://www.google.com/maps/dir/?api=1&destination=Caitlin%20Claus%20home%20address&travelmode=driving" target="_blank"><strong>Caitlin Claus</strong>: Nursing</a></div></div></td><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">21</span></div><div class="m-day-body"></div></td></tr>
+<tr><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">22</span></div><div class="m-day-body"></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">23</span><a href="https://www.google.com/maps/dir/?api=1&destination=Matthew%20Alstock&waypoints=Amanda%20Morgan|Kimberly%20Barnes|Tiara%20Giles&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Amanda%20Morgan%20home%20address&travelmode=driving" target="_blank"><strong>Amanda Morgan</strong>: AIMS/follow up</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kimberly%20Barnes%20home%20address&travelmode=driving" target="_blank"><strong>Kimberly Barnes</strong>: med pass</a></div><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Tiara%20Giles%20home%20address&travelmode=driving" target="_blank"><strong>Tiara Giles</strong>: Injection</a></div><div class="m-item" style="border-left:3px solid #b45309;"><a href="https://www.google.com/maps/dir/?api=1&destination=Matthew%20Alstock%20home%20address&travelmode=driving" target="_blank"><strong>Matthew Alstock</strong>: Rapport</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">24</span><a href="https://www.google.com/maps/dir/?api=1&destination=Dylan%20Edgell&waypoints=Charles%20Barker|Helen%20Zehr|Todd%20Jewel&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Charles%20Barker%20home%20address&travelmode=driving" target="_blank"><strong>Charles Barker</strong>: AIMS/follow</a></div><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Helen%20Zehr%20home%20address&travelmode=driving" target="_blank"><strong>Helen Zehr</strong>: Injection</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Todd%20Jewel%20home%20address&travelmode=driving" target="_blank"><strong>Todd Jewel</strong>: Med</a></div><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Dylan%20Edgell%20home%20address&travelmode=driving" target="_blank"><strong>Dylan Edgell</strong>: AIMS/follow</a></div></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">25</span><a href="https://www.google.com/maps/dir/?api=1&destination=Lillian%20Bates&waypoints=Jamel%20Brown|Melinda%20Haskell|Kaylynn%20Bock&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #b91c1c;"><a href="https://www.google.com/maps/dir/?api=1&destination=Jamel%20Brown%20home%20address&travelmode=driving" target="_blank"><strong>Jamel Brown</strong>: Injection</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Melinda%20Haskell%20home%20address&travelmode=driving" target="_blank"><strong>Melinda Haskell</strong>: med pass</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kaylynn%20Bock%20home%20address&travelmode=driving" target="_blank"><strong>Kaylynn Bock</strong>: AIMS/ Med</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Lillian%20Bates%20home%20address&travelmode=driving" target="_blank"><strong>Lillian Bates</strong>: med pass</a></div></div></td><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">26</span></div><div class="m-day-body"><div class="holiday-tag">🦃 Thanksgiving Day</div></div></td><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">27</span></div><div class="m-day-body"></div></td><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">28</span></div><div class="m-day-body"></div></td></tr>
+<tr><td class="m-cell empty-day"><div class="m-day-hdr"><span class="m-day-num">29</span></div><div class="m-day-body"></div></td><td class="m-cell has-appts"><div class="m-day-hdr"><span class="m-day-num">30</span><a href="https://www.google.com/maps/dir/?api=1&destination=Kara%20Mueller&waypoints=Junior%20Robinson|Michael%20Jones|Joylene%20Jones&travelmode=driving" target="_blank" class="day-route-btn" title="Route all 4 visits">📍 Route (4)</a></div><div class="m-day-body"><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Junior%20Robinson%20home%20address&travelmode=driving" target="_blank"><strong>Junior Robinson</strong>: AIMS/follow</a></div><div class="m-item" style="border-left:3px solid #1d4ed8;"><a href="https://www.google.com/maps/dir/?api=1&destination=Michael%20Jones%20home%20address&travelmode=driving" target="_blank"><strong>Michael Jones</strong>: Med pass</a></div><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Joylene%20Jones%20home%20address&travelmode=driving" target="_blank"><strong>Joylene Jones</strong>: AIMS/follow</a></div><div class="m-item" style="border-left:3px solid #6d28d9;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kara%20Mueller%20home%20address&travelmode=driving" target="_blank"><strong>Kara Mueller</strong>: AIMS/follow</a></div></div></td><td class="m-cell pad-cell"></td><td class="m-cell pad-cell"></td><td class="m-cell pad-cell"></td><td class="m-cell pad-cell"></td><td class="m-cell pad-cell"></td></tr>
+
+      </tbody>
+    </table>
+  </section>
+
+  <!-- PAGES 2..6: WEEKLY DETAILED BREAKDOWNS -->
+  
+    <section class="print-page week-page" id="sec-week-1">
+      <header class="page-hdr">
+        <div>
+          <h1>GLADYS WORK SCHEDULE — WEEK 1: NOV 1 – NOV 7, 2026</h1>
+          <p class="sub-hdr">ACTT 6 Client Appointments · Detailed Weekly Breakdown &amp; Field Checklist (20 Scheduled Visits)</p>
+        </div>
+        <div class="page-badge">Page 2 of 6</div>
+      </header>
+      
+        <div class="day-card" id="day-2026-11-02">
+          <div class="day-card-hdr">
+            <span>📅 Monday, November 02, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Tiara%20Giles&waypoints=Amanda%20Morgan|Charles%20Barker|Johnny%20Gallen&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261102_1">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261102_1" onchange="toggleVisit('chk_20261102_1')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Amanda Morgan <span style="color:#64748b;font-weight:400;font-size:11px;">(#1)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Amanda%20Morgan%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261102_1" oninput="saveNote('note_20261102_1')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261102_3">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261102_3" onchange="toggleVisit('chk_20261102_3')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Charles Barker <span style="color:#64748b;font-weight:400;font-size:11px;">(#3)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Charles%20Barker%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261102_3" oninput="saveNote('note_20261102_3')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261102_6">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261102_6" onchange="toggleVisit('chk_20261102_6')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Johnny Gallen <span style="color:#64748b;font-weight:400;font-size:11px;">(#6)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Johnny%20Gallen%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261102_6" oninput="saveNote('note_20261102_6')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261102_16">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261102_16" onchange="toggleVisit('chk_20261102_16')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Tiara Giles <span style="color:#64748b;font-weight:400;font-size:11px;">(#16)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Tiara%20Giles%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261102_16" oninput="saveNote('note_20261102_16')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-03">
+          <div class="day-card-hdr">
+            <span>📅 Tuesday, November 03, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Joylene%20Jones&waypoints=Helen%20Zehr|Cheyenne%20Bue|Lillian%20Bates&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261103_4">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261103_4" onchange="toggleVisit('chk_20261103_4')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Helen Zehr <span style="color:#64748b;font-weight:400;font-size:11px;">(#4)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Helen%20Zehr%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261103_4" oninput="saveNote('note_20261103_4')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261103_20">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261103_20" onchange="toggleVisit('chk_20261103_20')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Cheyenne Bue <span style="color:#64748b;font-weight:400;font-size:11px;">(#20)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Cheyenne%20Bue%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261103_20" oninput="saveNote('note_20261103_20')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261103_22">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261103_22" onchange="toggleVisit('chk_20261103_22')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Lillian Bates <span style="color:#64748b;font-weight:400;font-size:11px;">(#22)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Lillian%20Bates%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261103_22" oninput="saveNote('note_20261103_22')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261103_25">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261103_25" onchange="toggleVisit('chk_20261103_25')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Joylene Jones <span style="color:#64748b;font-weight:400;font-size:11px;">(#25)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Joylene%20Jones%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261103_25" oninput="saveNote('note_20261103_25')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-04">
+          <div class="day-card-hdr">
+            <span>📅 Wednesday, November 04, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Jeremy%20Mays&waypoints=Kimberly%20Barnes|Mathew%20Donegan|Todd%20Jewel&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261104_9">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261104_9" onchange="toggleVisit('chk_20261104_9')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kimberly Barnes <span style="color:#64748b;font-weight:400;font-size:11px;">(#9)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kimberly%20Barnes%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261104_9" oninput="saveNote('note_20261104_9')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261104_12">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261104_12" onchange="toggleVisit('chk_20261104_12')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Mathew Donegan <span style="color:#64748b;font-weight:400;font-size:11px;">(#12)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Mathew%20Donegan%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261104_12" oninput="saveNote('note_20261104_12')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261104_17">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261104_17" onchange="toggleVisit('chk_20261104_17')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Todd Jewel <span style="color:#64748b;font-weight:400;font-size:11px;">(#17)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Todd%20Jewel%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261104_17" oninput="saveNote('note_20261104_17')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261104_18">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261104_18" onchange="toggleVisit('chk_20261104_18')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Jeremy Mays <span style="color:#64748b;font-weight:400;font-size:11px;">(#18)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Jeremy%20Mays%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261104_18" oninput="saveNote('note_20261104_18')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-05">
+          <div class="day-card-hdr">
+            <span>📅 Thursday, November 05, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=David%20Perdue&waypoints=Junior%20Robinson|Kellum%20Foor|Kaylynn%20Bock&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261105_7">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261105_7" onchange="toggleVisit('chk_20261105_7')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Junior Robinson <span style="color:#64748b;font-weight:400;font-size:11px;">(#7)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing / Check-in</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Junior%20Robinson%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261105_7" oninput="saveNote('note_20261105_7')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261105_8">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261105_8" onchange="toggleVisit('chk_20261105_8')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kellum Foor <span style="color:#64748b;font-weight:400;font-size:11px;">(#8)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing / Check-in</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kellum%20Foor%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261105_8" oninput="saveNote('note_20261105_8')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261105_19">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261105_19" onchange="toggleVisit('chk_20261105_19')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kaylynn Bock <span style="color:#64748b;font-weight:400;font-size:11px;">(#19)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing / Check-in</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kaylynn%20Bock%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261105_19" oninput="saveNote('note_20261105_19')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261105_21">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261105_21" onchange="toggleVisit('chk_20261105_21')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">David Perdue <span style="color:#64748b;font-weight:400;font-size:11px;">(#21)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=David%20Perdue%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261105_21" oninput="saveNote('note_20261105_21')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-06">
+          <div class="day-card-hdr">
+            <span>📅 Friday, November 06, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Simon%20Taylor&waypoints=Ariel%20Watson|Charles%20Barker|Melinda%20Haskell&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261106_2">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261106_2" onchange="toggleVisit('chk_20261106_2')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Ariel Watson <span style="color:#64748b;font-weight:400;font-size:11px;">(#2)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Ariel%20Watson%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261106_2" oninput="saveNote('note_20261106_2')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261106_3">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261106_3" onchange="toggleVisit('chk_20261106_3')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Charles Barker <span style="color:#64748b;font-weight:400;font-size:11px;">(#3)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Diabetes</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Charles%20Barker%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261106_3" oninput="saveNote('note_20261106_3')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261106_13">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261106_13" onchange="toggleVisit('chk_20261106_13')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Melinda Haskell <span style="color:#64748b;font-weight:400;font-size:11px;">(#13)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med Pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Melinda%20Haskell%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261106_13" oninput="saveNote('note_20261106_13')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261106_15">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261106_15" onchange="toggleVisit('chk_20261106_15')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Simon Taylor <span style="color:#64748b;font-weight:400;font-size:11px;">(#15)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Simon%20Taylor%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261106_15" oninput="saveNote('note_20261106_15')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+    </section>
+    
+    <section class="print-page week-page" id="sec-week-2">
+      <header class="page-hdr">
+        <div>
+          <h1>GLADYS WORK SCHEDULE — WEEK 2: NOV 8 – NOV 14, 2026</h1>
+          <p class="sub-hdr">ACTT 6 Client Appointments · Detailed Weekly Breakdown &amp; Field Checklist (16 Scheduled Visits)</p>
+        </div>
+        <div class="page-badge">Page 3 of 6</div>
+      </header>
+      
+        <div class="day-card" id="day-2026-11-09">
+          <div class="day-card-hdr">
+            <span>📅 Monday, November 09, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Kara%20Mueller&waypoints=Simon%20Taylor|Crystal%20Kuegel|Christina%20Kent&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261109_15">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261109_15" onchange="toggleVisit('chk_20261109_15')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Simon Taylor <span style="color:#64748b;font-weight:400;font-size:11px;">(#15)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Simon%20Taylor%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261109_15" oninput="saveNote('note_20261109_15')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261109_26">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261109_26" onchange="toggleVisit('chk_20261109_26')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Crystal Kuegel <span style="color:#64748b;font-weight:400;font-size:11px;">(#26)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Crystal%20Kuegel%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261109_26" oninput="saveNote('note_20261109_26')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261109_27">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261109_27" onchange="toggleVisit('chk_20261109_27')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Christina Kent <span style="color:#64748b;font-weight:400;font-size:11px;">(#27)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med Pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Christina%20Kent%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261109_27" oninput="saveNote('note_20261109_27')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261109_33">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261109_33" onchange="toggleVisit('chk_20261109_33')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kara Mueller <span style="color:#64748b;font-weight:400;font-size:11px;">(#33)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport and</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kara%20Mueller%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261109_33" oninput="saveNote('note_20261109_33')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-10">
+          <div class="day-card-hdr">
+            <span>📅 Tuesday, November 10, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Cheyenne%20Bue&waypoints=Melinda%20Haskell|Todd%20Jewel|Jeremy%20Mays&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261110_13">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261110_13" onchange="toggleVisit('chk_20261110_13')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Melinda Haskell <span style="color:#64748b;font-weight:400;font-size:11px;">(#13)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Melinda%20Haskell%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261110_13" oninput="saveNote('note_20261110_13')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261110_17">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261110_17" onchange="toggleVisit('chk_20261110_17')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Todd Jewel <span style="color:#64748b;font-weight:400;font-size:11px;">(#17)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Todd%20Jewel%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261110_17" oninput="saveNote('note_20261110_17')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261110_18">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261110_18" onchange="toggleVisit('chk_20261110_18')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Jeremy Mays <span style="color:#64748b;font-weight:400;font-size:11px;">(#18)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med Pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Jeremy%20Mays%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261110_18" oninput="saveNote('note_20261110_18')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261110_20">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261110_20" onchange="toggleVisit('chk_20261110_20')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Cheyenne Bue <span style="color:#64748b;font-weight:400;font-size:11px;">(#20)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med Pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Cheyenne%20Bue%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261110_20" oninput="saveNote('note_20261110_20')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-11">
+          <div class="day-card-hdr">
+            <span>📅 Wednesday, November 11, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Dylan%20Edgell&waypoints=David%20Perdue|Phoenix%20Kamp|Amanda%20Rogers&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261111_21">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261111_21" onchange="toggleVisit('chk_20261111_21')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">David Perdue <span style="color:#64748b;font-weight:400;font-size:11px;">(#21)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">AIMS/ Med</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=David%20Perdue%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261111_21" oninput="saveNote('note_20261111_21')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261111_28">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261111_28" onchange="toggleVisit('chk_20261111_28')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Phoenix Kamp <span style="color:#64748b;font-weight:400;font-size:11px;">(#28)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Phoenix%20Kamp%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261111_28" oninput="saveNote('note_20261111_28')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261111_29">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261111_29" onchange="toggleVisit('chk_20261111_29')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Amanda Rogers <span style="color:#64748b;font-weight:400;font-size:11px;">(#29)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Amanda%20Rogers%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261111_29" oninput="saveNote('note_20261111_29')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261111_34">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261111_34" onchange="toggleVisit('chk_20261111_34')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Dylan Edgell <span style="color:#64748b;font-weight:400;font-size:11px;">(#34)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Dylan%20Edgell%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261111_34" oninput="saveNote('note_20261111_34')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-12">
+          <div class="day-card-hdr">
+            <span>📅 Thursday, November 12, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Joylene%20Jones&waypoints=Charles%20Barker|Melinda%20Haskell|Kaylynn%20Bock&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261112_3">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261112_3" onchange="toggleVisit('chk_20261112_3')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Charles Barker <span style="color:#64748b;font-weight:400;font-size:11px;">(#3)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Charles%20Barker%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261112_3" oninput="saveNote('note_20261112_3')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261112_13">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261112_13" onchange="toggleVisit('chk_20261112_13')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Melinda Haskell <span style="color:#64748b;font-weight:400;font-size:11px;">(#13)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Melinda%20Haskell%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261112_13" oninput="saveNote('note_20261112_13')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261112_19">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261112_19" onchange="toggleVisit('chk_20261112_19')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kaylynn Bock <span style="color:#64748b;font-weight:400;font-size:11px;">(#19)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kaylynn%20Bock%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261112_19" oninput="saveNote('note_20261112_19')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261112_25">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261112_25" onchange="toggleVisit('chk_20261112_25')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Joylene Jones <span style="color:#64748b;font-weight:400;font-size:11px;">(#25)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Joylene%20Jones%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261112_25" oninput="saveNote('note_20261112_25')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-13">
+          <div class="day-card-hdr">
+            <span>📅 Friday, November 13, 2026 (0 Visits)</span>
+            
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody><tr><td colspan="6" style="color:#64748b;font-style:italic;padding:8px 12px;">No Gladys Visits Scheduled</td></tr></tbody>
+          </table>
+        </div>
+        
+    </section>
+    
+    <section class="print-page week-page" id="sec-week-3">
+      <header class="page-hdr">
+        <div>
+          <h1>GLADYS WORK SCHEDULE — WEEK 3: NOV 15 – NOV 21, 2026</h1>
+          <p class="sub-hdr">ACTT 6 Client Appointments · Detailed Weekly Breakdown &amp; Field Checklist (20 Scheduled Visits)</p>
+        </div>
+        <div class="page-badge">Page 4 of 6</div>
+      </header>
+      
+        <div class="day-card" id="day-2026-11-16">
+          <div class="day-card-hdr">
+            <span>📅 Monday, November 16, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Christina%20Kent&waypoints=Kimberly%20Barnes|Michael%20Jones|Tiara%20Giles&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261116_9">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261116_9" onchange="toggleVisit('chk_20261116_9')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kimberly Barnes <span style="color:#64748b;font-weight:400;font-size:11px;">(#9)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow up</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kimberly%20Barnes%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261116_9" oninput="saveNote('note_20261116_9')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261116_14">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261116_14" onchange="toggleVisit('chk_20261116_14')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Michael Jones <span style="color:#64748b;font-weight:400;font-size:11px;">(#14)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow up</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Michael%20Jones%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261116_14" oninput="saveNote('note_20261116_14')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261116_16">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261116_16" onchange="toggleVisit('chk_20261116_16')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Tiara Giles <span style="color:#64748b;font-weight:400;font-size:11px;">(#16)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow up</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Tiara%20Giles%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261116_16" oninput="saveNote('note_20261116_16')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261116_27">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261116_27" onchange="toggleVisit('chk_20261116_27')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Christina Kent <span style="color:#64748b;font-weight:400;font-size:11px;">(#27)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow up</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Christina%20Kent%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261116_27" oninput="saveNote('note_20261116_27')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-17">
+          <div class="day-card-hdr">
+            <span>📅 Tuesday, November 17, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Kimberly%20Heath&waypoints=Ariel%20Watson|Jamel%20Brown|Johnny%20Gallen&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261117_2">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261117_2" onchange="toggleVisit('chk_20261117_2')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Ariel Watson <span style="color:#64748b;font-weight:400;font-size:11px;">(#2)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Ariel%20Watson%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261117_2" oninput="saveNote('note_20261117_2')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261117_5">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261117_5" onchange="toggleVisit('chk_20261117_5')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Jamel Brown <span style="color:#64748b;font-weight:400;font-size:11px;">(#5)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Jamel%20Brown%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261117_5" oninput="saveNote('note_20261117_5')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261117_6">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261117_6" onchange="toggleVisit('chk_20261117_6')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Johnny Gallen <span style="color:#64748b;font-weight:400;font-size:11px;">(#6)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Johnny%20Gallen%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261117_6" oninput="saveNote('note_20261117_6')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261117_10">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261117_10" onchange="toggleVisit('chk_20261117_10')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kimberly Heath <span style="color:#64748b;font-weight:400;font-size:11px;">(#10)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kimberly%20Heath%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261117_10" oninput="saveNote('note_20261117_10')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-18">
+          <div class="day-card-hdr">
+            <span>📅 Wednesday, November 18, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Terry%20Rogers&waypoints=Kellum%20Foor|Kaylynn%20Bock|Madison%20Jones&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261118_8">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261118_8" onchange="toggleVisit('chk_20261118_8')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kellum Foor <span style="color:#64748b;font-weight:400;font-size:11px;">(#8)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kellum%20Foor%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261118_8" oninput="saveNote('note_20261118_8')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261118_19">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261118_19" onchange="toggleVisit('chk_20261118_19')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kaylynn Bock <span style="color:#64748b;font-weight:400;font-size:11px;">(#19)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kaylynn%20Bock%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261118_19" oninput="saveNote('note_20261118_19')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261118_24">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261118_24" onchange="toggleVisit('chk_20261118_24')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Madison Jones <span style="color:#64748b;font-weight:400;font-size:11px;">(#24)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Madison%20Jones%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261118_24" oninput="saveNote('note_20261118_24')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261118_30">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261118_30" onchange="toggleVisit('chk_20261118_30')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Terry Rogers <span style="color:#64748b;font-weight:400;font-size:11px;">(#30)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Terry%20Rogers%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261118_30" oninput="saveNote('note_20261118_30')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-19">
+          <div class="day-card-hdr">
+            <span>📅 Thursday, November 19, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Lillian%20Bates&waypoints=Amanda%20Morgan|Johnny%20Gallen|Simon%20Taylor&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261119_1">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261119_1" onchange="toggleVisit('chk_20261119_1')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Amanda Morgan <span style="color:#64748b;font-weight:400;font-size:11px;">(#1)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Amanda%20Morgan%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261119_1" oninput="saveNote('note_20261119_1')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261119_6">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261119_6" onchange="toggleVisit('chk_20261119_6')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Johnny Gallen <span style="color:#64748b;font-weight:400;font-size:11px;">(#6)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Johnny%20Gallen%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261119_6" oninput="saveNote('note_20261119_6')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261119_15">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261119_15" onchange="toggleVisit('chk_20261119_15')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Simon Taylor <span style="color:#64748b;font-weight:400;font-size:11px;">(#15)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Simon%20Taylor%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261119_15" oninput="saveNote('note_20261119_15')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261119_22">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261119_22" onchange="toggleVisit('chk_20261119_22')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Lillian Bates <span style="color:#64748b;font-weight:400;font-size:11px;">(#22)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Lillian%20Bates%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261119_22" oninput="saveNote('note_20261119_22')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-20">
+          <div class="day-card-hdr">
+            <span>📅 Friday, November 20, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Caitlin%20Claus&waypoints=Kyra%20Caputo|Mathew%20Donegan|Melinda%20Haskell&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261120_11">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261120_11" onchange="toggleVisit('chk_20261120_11')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kyra Caputo <span style="color:#64748b;font-weight:400;font-size:11px;">(#11)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kyra%20Caputo%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261120_11" oninput="saveNote('note_20261120_11')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261120_12">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261120_12" onchange="toggleVisit('chk_20261120_12')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Mathew Donegan <span style="color:#64748b;font-weight:400;font-size:11px;">(#12)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/Follow</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Mathew%20Donegan%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261120_12" oninput="saveNote('note_20261120_12')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261120_13">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261120_13" onchange="toggleVisit('chk_20261120_13')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Melinda Haskell <span style="color:#64748b;font-weight:400;font-size:11px;">(#13)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med Pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Melinda%20Haskell%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261120_13" oninput="saveNote('note_20261120_13')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261120_31">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261120_31" onchange="toggleVisit('chk_20261120_31')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Caitlin Claus <span style="color:#64748b;font-weight:400;font-size:11px;">(#31)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#047857;">Nursing</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Caitlin%20Claus%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261120_31" oninput="saveNote('note_20261120_31')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+    </section>
+    
+    <section class="print-page week-page" id="sec-week-4">
+      <header class="page-hdr">
+        <div>
+          <h1>GLADYS WORK SCHEDULE — WEEK 4: NOV 22 – NOV 28, 2026 (THANKSGIVING WEEK)</h1>
+          <p class="sub-hdr">ACTT 6 Client Appointments · Detailed Weekly Breakdown &amp; Field Checklist (12 Scheduled Visits)</p>
+        </div>
+        <div class="page-badge">Page 5 of 6</div>
+      </header>
+      
+        <div class="day-card" id="day-2026-11-23">
+          <div class="day-card-hdr">
+            <span>📅 Monday, November 23, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Matthew%20Alstock&waypoints=Amanda%20Morgan|Kimberly%20Barnes|Tiara%20Giles&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261123_1">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261123_1" onchange="toggleVisit('chk_20261123_1')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Amanda Morgan <span style="color:#64748b;font-weight:400;font-size:11px;">(#1)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow up</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Amanda%20Morgan%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261123_1" oninput="saveNote('note_20261123_1')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261123_9">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261123_9" onchange="toggleVisit('chk_20261123_9')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kimberly Barnes <span style="color:#64748b;font-weight:400;font-size:11px;">(#9)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">med pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kimberly%20Barnes%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261123_9" oninput="saveNote('note_20261123_9')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261123_16">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261123_16" onchange="toggleVisit('chk_20261123_16')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Tiara Giles <span style="color:#64748b;font-weight:400;font-size:11px;">(#16)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Tiara%20Giles%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261123_16" oninput="saveNote('note_20261123_16')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261123_32">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261123_32" onchange="toggleVisit('chk_20261123_32')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Matthew Alstock <span style="color:#64748b;font-weight:400;font-size:11px;">(#32)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b45309;">Rapport</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Matthew%20Alstock%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261123_32" oninput="saveNote('note_20261123_32')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-24">
+          <div class="day-card-hdr">
+            <span>📅 Tuesday, November 24, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Dylan%20Edgell&waypoints=Charles%20Barker|Helen%20Zehr|Todd%20Jewel&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261124_3">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261124_3" onchange="toggleVisit('chk_20261124_3')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Charles Barker <span style="color:#64748b;font-weight:400;font-size:11px;">(#3)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Charles%20Barker%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261124_3" oninput="saveNote('note_20261124_3')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261124_4">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261124_4" onchange="toggleVisit('chk_20261124_4')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Helen Zehr <span style="color:#64748b;font-weight:400;font-size:11px;">(#4)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Helen%20Zehr%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261124_4" oninput="saveNote('note_20261124_4')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261124_17">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261124_17" onchange="toggleVisit('chk_20261124_17')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Todd Jewel <span style="color:#64748b;font-weight:400;font-size:11px;">(#17)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Todd%20Jewel%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261124_17" oninput="saveNote('note_20261124_17')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261124_34">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261124_34" onchange="toggleVisit('chk_20261124_34')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Dylan Edgell <span style="color:#64748b;font-weight:400;font-size:11px;">(#34)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Dylan%20Edgell%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261124_34" oninput="saveNote('note_20261124_34')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-25">
+          <div class="day-card-hdr">
+            <span>📅 Wednesday, November 25, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Lillian%20Bates&waypoints=Jamel%20Brown|Melinda%20Haskell|Kaylynn%20Bock&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261125_5">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261125_5" onchange="toggleVisit('chk_20261125_5')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Jamel Brown <span style="color:#64748b;font-weight:400;font-size:11px;">(#5)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#b91c1c;">Injection</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Jamel%20Brown%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261125_5" oninput="saveNote('note_20261125_5')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261125_13">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261125_13" onchange="toggleVisit('chk_20261125_13')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Melinda Haskell <span style="color:#64748b;font-weight:400;font-size:11px;">(#13)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">med pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Melinda%20Haskell%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261125_13" oninput="saveNote('note_20261125_13')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261125_19">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261125_19" onchange="toggleVisit('chk_20261125_19')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kaylynn Bock <span style="color:#64748b;font-weight:400;font-size:11px;">(#19)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">AIMS/ Med</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kaylynn%20Bock%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261125_19" oninput="saveNote('note_20261125_19')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261125_22">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261125_22" onchange="toggleVisit('chk_20261125_22')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Lillian Bates <span style="color:#64748b;font-weight:400;font-size:11px;">(#22)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">med pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Lillian%20Bates%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261125_22" oninput="saveNote('note_20261125_22')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-26">
+          <div class="day-card-hdr">
+            <span>📅 Thursday, November 26, 2026 (0 Visits)</span>
+            
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody><tr><td colspan="6" style="color:#64748b;font-style:italic;padding:8px 12px;">Thanksgiving Day — No Gladys Visits Scheduled</td></tr></tbody>
+          </table>
+        </div>
+        
+        <div class="day-card" id="day-2026-11-27">
+          <div class="day-card-hdr">
+            <span>📅 Friday, November 27, 2026 (0 Visits)</span>
+            
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody><tr><td colspan="6" style="color:#64748b;font-style:italic;padding:8px 12px;">No Gladys Visits Scheduled</td></tr></tbody>
+          </table>
+        </div>
+        
+    </section>
+    
+    <section class="print-page week-page" id="sec-week-5">
+      <header class="page-hdr">
+        <div>
+          <h1>GLADYS WORK SCHEDULE — WEEK 5: NOV 29 – NOV 30, 2026</h1>
+          <p class="sub-hdr">ACTT 6 Client Appointments · Detailed Weekly Breakdown &amp; Field Checklist (4 Scheduled Visits)</p>
+        </div>
+        <div class="page-badge">Page 6 of 6</div>
+      </header>
+      
+        <div class="day-card" id="day-2026-11-30">
+          <div class="day-card-hdr">
+            <span>📅 Monday, November 30, 2026 (4 Visits)</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Kara%20Mueller&waypoints=Junior%20Robinson|Michael%20Jones|Joylene%20Jones&travelmode=driving" target="_blank" class="full-day-route">🗺️ Launch Full Day Route (4 Stops)</a>
+          </div>
+          <table class="week-table">
+            <thead>
+              <tr>
+                <th>Done</th>
+                <th>Target Time</th>
+                <th>Client Name (Roster #)</th>
+                <th>Service / Appointment Type</th>
+                <th>Turn-by-Turn GPS</th>
+                <th>Clinical / Visit Notes &amp; Mileage</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr id="row_chk_20261130_7">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261130_7" onchange="toggleVisit('chk_20261130_7')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">09:00 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Junior Robinson <span style="color:#64748b;font-weight:400;font-size:11px;">(#7)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Junior%20Robinson%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261130_7" oninput="saveNote('note_20261130_7')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261130_14">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261130_14" onchange="toggleVisit('chk_20261130_14')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">10:30 AM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Michael Jones <span style="color:#64748b;font-weight:400;font-size:11px;">(#14)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#1d4ed8;">Med pass</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Michael%20Jones%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261130_14" oninput="saveNote('note_20261130_14')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261130_25">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261130_25" onchange="toggleVisit('chk_20261130_25')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">01:00 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Joylene Jones <span style="color:#64748b;font-weight:400;font-size:11px;">(#25)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Joylene%20Jones%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261130_25" oninput="saveNote('note_20261130_25')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                
+                <tr id="row_chk_20261130_33">
+                  <td style="width:42px;text-align:center;">
+                    <input type="checkbox" class="visit-chk" id="chk_20261130_33" onchange="toggleVisit('chk_20261130_33')" style="width:18px;height:18px;cursor:pointer;accent-color:#16a34a;">
+                  </td>
+                  <td style="width:88px;font-weight:600;color:#334155;">02:30 PM</td>
+                  <td style="width:185px;font-weight:700;color:#0f172a;">Kara Mueller <span style="color:#64748b;font-weight:400;font-size:11px;">(#33)</span></td>
+                  <td style="width:155px;"><span class="task-pill" style="background:#6d28d9;">AIMS/follow</span></td>
+                  <td style="width:155px;"><a href="https://www.google.com/maps/dir/?api=1&destination=Kara%20Mueller%20home%20address&travelmode=driving" target="_blank" class="nav-link">🚗 Navigate to House</a></td>
+                  <td class="notes-col" contenteditable="true" id="note_20261130_33" oninput="saveNote('note_20261130_33')" data-placeholder="Tap to type notes/mileage..."></td>
+                </tr>
+                </tbody>
+          </table>
+        </div>
+        
+    </section>
+    
+
+  <script>
+    function showSection(secId, btn) {
+      document.querySelectorAll('.nav-pills .nav-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      document.querySelectorAll('.print-page').forEach(sec => {
+        sec.style.display = (secId === 'all' || sec.id === secId) ? 'block' : 'none';
+      });
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    function showAllAndPrint() {
+      document.querySelectorAll('.print-page').forEach(sec => sec.style.display = 'block');
+      setTimeout(() => window.print(), 100);
+    }
+    function toggleShortcutHelp() {
+      const el = document.getElementById('shortcut-help');
+      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
+    function toggleVisit(chkId) {
+      const chk = document.getElementById(chkId);
+      const row = document.getElementById('row_' + chkId);
+      if (!chk || !row) return;
+      if (chk.checked) {
+        row.classList.add('visit-done');
+        localStorage.setItem('gladys_' + chkId, '1');
+      } else {
+        row.classList.remove('visit-done');
+        localStorage.removeItem('gladys_' + chkId);
+      }
+    }
+    function saveNote(noteId) {
+      const el = document.getElementById(noteId);
+      if (el) localStorage.setItem('gladys_' + noteId, el.innerText);
+    }
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.visit-chk').forEach(chk => {
+        if (localStorage.getItem('gladys_' + chk.id) === '1') {
+          chk.checked = true;
+          const row = document.getElementById('row_' + chk.id);
+          if (row) row.classList.add('visit-done');
+        }
+      });
+      document.querySelectorAll('.notes-col[id]').forEach(el => {
+        const saved = localStorage.getItem('gladys_' + el.id);
+        if (saved) el.innerText = saved;
+      });
+    });
+  </script>
+</body>
+</html>
